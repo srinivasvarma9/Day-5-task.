@@ -1,0 +1,12 @@
+from flask import flask, request
+
+app = Flask(_name_)
+
+@app.route("/update',methods=["post"]
+def update():
+       acc_number = request.args.get('Account','')
+       PAN_number = request.args.get('PAN','')
+       return "The account number is :"+str(acc_number)+", PAN number is :"+str(PAN_number)
+
+if __name__ =="__main__":
+    app.run()
